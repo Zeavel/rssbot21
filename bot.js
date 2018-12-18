@@ -2,7 +2,7 @@ const Discord = require('discord.js');
 const client = new Discord.Client();
 const CC = require('./command_create.js');
 const Command = CC.Command;
-const token = require("./token.json")
+
 
 
 var Commandss = new CC.Commands();
@@ -112,7 +112,7 @@ client.on('message', message => {
   
   });
 
-client.login(token.token);
+client.login(process.env.BOT_TOKEN);
 
 
 //"NDA3MTgwMTc1MzQ0NjY0NTg2.Dvo1PA.fRkrnsYVzzXyd4O8gXuFBCMlh0M"
